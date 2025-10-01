@@ -1,0 +1,10 @@
+0000000000000000000000000000000000000000 7f257f44f9684f4e893d46098780a66f4bd3618c jerrysanguyo <jsanguyo1624@gmail.com> 1734316045 +0800	clone: from https://github.com/jerrysanguyo/indakan.git
+7f257f44f9684f4e893d46098780a66f4bd3618c 95e7e191f58e789e3429b18bd179bfd80f6877ab jerrysanguyo <jsanguyo1624@gmail.com> 1734317850 +0800	commit: adjust seeder, and welcome blade
+95e7e191f58e789e3429b18bd179bfd80f6877ab c87c8924fe5d4d99d2d5a5506d6d8a5a754d467c Jerry Sanguyo Jr <jsanguyo1624@gmail.com> 1745731403 +0800	commit: added: talent criteria
+c87c8924fe5d4d99d2d5a5506d6d8a5a754d467c 3911854e62e635a56e95a93df64ca908d5ee3452 Jerry Sanguyo Jr <jsanguyo1624@gmail.com> 1749689166 +0800	commit: somethin new
+3911854e62e635a56e95a93df64ca908d5ee3452 ef227a0f342c307f1dff65881c425c8bf637f5f9 Jerry Sanguyo Jr <jsanguyo1624@gmail.com> 1749689286 +0800	commit: somethin new
+ef227a0f342c307f1dff65881c425c8bf637f5f9 3911854e62e635a56e95a93df64ca908d5ee3452 Jerry Sanguyo Jr <jsanguyo1624@gmail.com> 1749689371 +0800	reset: moving to HEAD~1
+3911854e62e635a56e95a93df64ca908d5ee3452 79acd1e8a97a2321bcd20a4ef3823b5c869171ac Jerry Sanguyo Jr <jsanguyo1624@gmail.com> 1749689392 +0800	commit: somethin new
+79acd1e8a97a2321bcd20a4ef3823b5c869171ac 0243b1c68ae581b54ca7d4db78bbb32ac47021db Jerry Sanguyo <jsanguyo1624@gmail.com> 1752980820 +0800	commit: added: services
+0243b1c68ae581b54ca7d4db78bbb32ac47021db 6f5d081331c76ee19afcdb65b50ef2bed29cad4f Jerry Sanguyo <jsanguyo1624@gmail.com> 1759347859 +0800	commit: added: background cms
+6f5d081331c76ee19afcdb65b50ef2bed29cad4f 12f13f5c2f18f924bdb9f895bd16fda19188921f Jerry Sanguyo <jsanguyo1624@gmail.com> 1759348117 +0800	commit: chore(secrets): stop tracking env files and update .gitignore
