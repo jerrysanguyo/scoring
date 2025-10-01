@@ -1,4 +1,3 @@
-<!-- resources/views/contestant/index.blade.php -->
 @extends('layouts.app')
 
 @section('content')
@@ -59,9 +58,18 @@
                                     $scoreData = $contestant->criteria_scores[$c->id] ?? ['weighted' => 0];
                                     @endphp
                                     <td class="text-center">
-                                        <span class="badge bg-info text-dark px-2 py-1">
-                                            {{ number_format($scoreData['weighted'], 2) }}
-                                        </span>
+                                        <div>
+                                            <span class="badge bg-info text-dark px-2 py-1">
+                                                {{ number_format($scoreData['weighted'], 2) }}
+                                            </span>
+
+                                            @if (!empty($scoreData['scorers']))
+                                            <i class="fas fa-user text-secondary ms-2" data-bs-toggle="tooltip"
+                                                data-bs-placement="top"
+                                                title="Scored by: {{ implode(', ', $scoreData['scorers']) }}">
+                                            </i>
+                                            @endif
+                                        </div>
                                     </td>
                                     @endforeach
 
@@ -100,6 +108,14 @@
 </div>
 
 @push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+});
+</script>
 <script>
 $(function() {
     $('#contestant-table').DataTable({

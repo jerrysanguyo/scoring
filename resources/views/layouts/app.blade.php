@@ -11,10 +11,10 @@
     <link href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/2.0.2/js/dataTables.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f2d7302b1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="icon" type="image/webp" href="{{ asset('image/logo.webp') }}">
-    <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app-1bd03d06.css') }}">
-    <script src="{{ asset('build/assets/app-de464e6f.js') }}"></script>
     <style>
     .btn.btn-primary {
         background-color: #727CF5;

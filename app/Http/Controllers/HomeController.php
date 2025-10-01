@@ -34,11 +34,19 @@ class HomeController extends Controller
                 $criteriaId    = $score->criteria_id;
                 $totalScore    = $score->total;
                 $judgeCount    = $score->count > 0 ? $score->count : 1;
-                $aveTotalScore = $score->total / $judgeCount;
+                $aveTotalScore = $totalScore / $judgeCount;
                 $averageScore  = $totalScore / $judgeCount;
 
                 $percentage      = $criteriaPercentages[$criteriaId] ?? 0;
                 $weightedAverage = ($averageScore / $percentage) * $percentage;
+                
+                $scorers = Score::where('contestant_id', $contestant->id)
+                    ->where('criteria_id', $criteriaId)
+                    ->with('scoredBy')
+                    ->get()
+                    ->pluck('scoredBy.name')
+                    ->filter()
+                    ->toArray();
 
                 $criteriaScores[$criteriaId] = [
                     'total'      => $aveTotalScore,
@@ -46,6 +54,7 @@ class HomeController extends Controller
                     'average'    => $averageScore,
                     'weighted'   => $weightedAverage,
                     'percentage' => $percentage,
+                    'scorers'    => $scorers,
                 ];
 
                 $overallScore += $weightedAverage;
